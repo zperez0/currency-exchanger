@@ -1,7 +1,17 @@
 body {
   margin: 250px;
+  background-color: #00519d38;
 }
 
 .container {
   text-align: center;
+}
+
+h1 {
+  padding: 35px;
+  background-color: #fdc6007e;
+}
+
+.total {
+  margin: 20px;
 }
