@@ -13,5 +13,11 @@ h1 {
 }
 
 .total {
-  margin: 250px;
+  margin: 350px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  padding: 10px;
 }
