@@ -16,27 +16,16 @@ This application will convert a users base currency and the counter-currency of 
   
 
 *  _HTML_
-
 *  _CSS_
-
 *  _BootStrap_
-
 *  _Markdown_
-
 *  _JavaScript_
-
 *  _jQuery_
-
 *  _WebPack_
-
 *  _JSON_
-
 *  _Jest_
-
 *  _Babel_
-
 *  _esLint_
-
 *  _Git_
 
   
