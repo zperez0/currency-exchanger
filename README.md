@@ -80,7 +80,7 @@ touch .gitignore
 
 *  _Navigate to .env file_
 
-* _Type: 
+* _Type:_
 
 > **"API_KEY = INSERT YOUR API KEY HERE "**
 
@@ -88,7 +88,7 @@ touch .gitignore
 
 *  _Navigate to .gitignore file_
 
-*  _Type in a new line: 
+*  _Type in a new line:_ 
 
 > **.env**
 
