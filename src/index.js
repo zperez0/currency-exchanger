@@ -12,10 +12,13 @@ function clearFields() {
 }
 
 function getElements(response) {
-  if () {
-    
+  if (response.result === 'success' && response.conversion_rate) {
+    let rate = response.conversion_rate;
+    let amount = $("#amount").val();
+    $(".total").text(` Total: ${rate * amount} ${response.target_code}`);
   } else {
-
+    $(".total").text("Error");
+    $(".showErrors").text( `Sorry, Space Cowboy due to a ${response} error. We were unable to process your information. Try choosing another currency or checking your API Key.`);
   }
 }
 
