@@ -1,9 +1,8 @@
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
-import CurrencyExchange from './service/currency-service';
-
+import $ from "jquery";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/styles.css";
+import CurrencyExchange from "./service/currency-service";
 
 function clearFields() {
   $(".total").text("");
@@ -12,13 +11,15 @@ function clearFields() {
 }
 
 function getElements(response) {
-  if (response.result === 'success' && response.conversion_rate) {
+  if (response.result === "success" && response.conversion_rate) {
     let rate = response.conversion_rate;
     let amount = $("#amount").val();
     $(".total").text(` Total: ${rate * amount} ${response.target_code}`);
   } else {
     $(".total").text("Error");
-    $(".showErrors").text( `Sorry, Space Cowboy due to a ${response} error. We were unable to process your information. Try choosing another currency or checking your API Key.`);
+    $(".showErrors").text(
+      `Sorry, Space Cowboy due to a ${response} error. We were unable to process your information. Try choosing another currency or checking your API Key.`
+    );
   }
 }
 
@@ -35,18 +36,3 @@ $(document).ready(function () {
     makeApiCall(currencyOne, currencyTwo);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
