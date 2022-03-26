@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,50 @@
   <title>Currency Exchanger</title>
 </head>
 <body>
-  <div class="container">
-    <div class="mb-4 bg-light rounded-3">
-      <h1 class="display-5 fw-bold">Currency Converter</h1>
+    <div class="container">
+      <div class="mb-4 bg-light rounded-3">
+        <h1 class="display-5 fw-bold">Currency Converter</h1>
+      </div>
+      <form>
+        <h5> Exchanging currency has never been easier!</h5>
+        <h6><i>Enter the amount below, select a base currency and choose the counter currency.</i></h6>
+        <br>
     </div>
-    <form>
-      <h5> Exchanging currency has never been easier!</h5>
-      <h6><i>Enter the amount below, select a base currency and choose the counter currency.</i></h6>
-      <br>
-    </div>
-
-      <label for="amount">Amount:</label>
-      <input id="amount" type="number" value="1" min="1" />
-      <br>
-      <br>
-    
-      
-      <label for="text">From: </label>
-      <select class="form-control" id="currencyOne">
-        <option selected>USD</option>
-        <option>EUR</option>
-        <option>JPY</option>
-        <option>CNY</option>
-        <option>Woolong</option>
-        <option>CAD</option>
-        <option>KID</option>
-        <option>MXN</option>
-      </select>
-      <br>
-
-      <label for="text">To:</label>
-      <select class="form-control" id="currencyTwo">
-        <option>USD</option>
-        <option>EUR</option>
-        <option>JPY</option>
-        <option selected>CNY</option>
-        <option>Woolong</option>
-        <option>CAD</option>
-        <option>KID</option>
-        <option>MXN</option>
-      </select>
-      <br>
-      <br>
-      <button type="button" class="btn btn-primary" id="convertButton">Convert</button>
+    <label for="amount">Amount:</label>
+    <input id="amount" type="number" value="1" min="1">
+    <br>
+    <br>
+    <label for="text">From: </label>
+    <select class="form-control" id="currencyOne">
+      <option selected>USD</option>
+      <option>EUR</option>
+      <option>JPY</option>
+      <option>CNY</option>
+      <option>Woolong</option>
+      <option>CAD</option>
+      <option>KID</option>
+      <option>MXN</option>
+    </select>
+    <br>
+    <label for="text">To:</label>
+    <select class="form-control" id="currencyTwo">
+      <option>USD</option>
+      <option>EUR</option>
+      <option>JPY</option>
+      <option selected>CNY</option>
+      <option>Woolong</option>
+      <option>CAD</option>
+      <option>KID</option>
+      <option>MXN</option>
+    </select>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary" id="convertButton">Convert</button>
     </form>
     <br>
     <br>
     <h5><span class="total"></span></h5>
     <br>
     <h5><span class="showErrors"></span></h5>
-  
-</body>
+  </body>
 </html>
