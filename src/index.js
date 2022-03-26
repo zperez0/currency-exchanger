@@ -6,9 +6,9 @@ import CurrencyExchange from './service/currency-service';
 
 
 function clearFields() {
-  $("").text("");
-  $("").text("");
-  $("").text("");
+  $(".total").text("");
+  $(".amount").text("");
+  $(".showErrors").text("");
 }
 
 function getElements(response) {
